@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10.2)
+project("procinex_core")
+add_library(procinex_core SHARED stub.cpp)
+find_library(log-lib log)
+target_link_libraries(procinex_core ${log-lib})
